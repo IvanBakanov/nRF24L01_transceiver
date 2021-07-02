@@ -1,1 +1,1 @@
-# nRF24L01_transceiver
+# nRF24L01 transceiver
