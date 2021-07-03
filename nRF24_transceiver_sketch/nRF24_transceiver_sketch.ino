@@ -1,3 +1,9 @@
+/*
+User's guide: https://github.com/IvanBakanov/nRF24L01_transceiver
+Author: Ivan Bakanov
+02.07.2021
+*/
+
 #include <SPI.h>
 // Библиотека для работы с трансивером nRF24L01
 #include <RF24.h> 
