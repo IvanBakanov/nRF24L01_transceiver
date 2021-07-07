@@ -42,7 +42,7 @@ void setup(){
   /*
   // Receive
   // Открыть канал на чтение (номер 0-5, адрес)
-  nRF.openReadingPipe(1, byte("nRF24"));
+  nRF.openReadingPipe(0, byte("nRF24"));
   nRF.startListening();
   */
 }
@@ -51,9 +51,9 @@ void loop(){
   /*
   // Transmit
   // &var - указатель на адрес оперативной памяти данной переменной (оператор '&')
-  bool report=nRF.write(&payload, sizeof(payload));
+  bool report = nRF.write(&payload, sizeof(payload));
   Serial.println(report);
-  payload+=1;
+  payload += 1;
   */
   
   /*                
