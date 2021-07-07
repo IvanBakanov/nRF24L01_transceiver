@@ -11,6 +11,7 @@ Author: Ivan Bakanov
 #define CE_PIN 9
 #define CSN_PIN 10
 
+const byte pipe_id = "nRF24";
 byte payload;
 
 RF24 nRF(CE_PIN, CSN_PIN);
@@ -35,14 +36,14 @@ void setup(){
   // Transmit
   // Открыть канал на запись
   // Уникальный ID трансивера (5-байтовый адрес)
-  nRF.openWritingPipe(byte("nRF24"));
+  nRF.openWritingPipe(pipe_id);
   nRF.stopListening();
   */
   
   /*
   // Receive
   // Открыть канал на чтение (номер 0-5, адрес)
-  nRF.openReadingPipe(0, byte("nRF24"));
+  nRF.openReadingPipe(0, pipe_id);
   nRF.startListening();
   */
 }
